@@ -3,18 +3,76 @@ Estilos da página
 */
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    /* Remove margens padrão de todos os elementos */
+    padding: 0px;
+    /* Remove nosso padding padrão */
     box-sizing: border-box;
+    /* Incluir borda e o padding no cálculo de largura e altura */
     font-family: 'Arial', sans-serif;
+    /* Define a fonte padrão */
 }
 
 body {
     background-color: #f6f6f6;
+    /* Define um fundo mais claro para a página */
     color: #333;
+    /* Define a cor do texto principal */
     line-height: 1.6;
+    /* Define o espaçamento entre as linhas */
 }
 
 /* 
-Estrutura do site
+Cabeçalho e logo do site
 */
+
+.logo {
+    width: 120px;
+    /* Reduzindo o tamanho do logotipo para melhorar a responsividade */
+    height: auto;
+    /* Asseguramos a proporção do logotipo */
+    display: block;
+    /* Exibe o logotipo como bloco */
+    margin: 10px auto;
+    /* Centralizar horizontalmente com espaçamento */
+}
+
+header {
+    background-image: url('../img/header.webp');
+    /* Imagem de fundo */
+    background-size: cover;
+    /* Imagem de backgroung cobrindo a área de cabeçalho */
+    background-position: center;
+    /* Centraliza a imagem no cabeçalho */
+    color: #f6f6f6;
+    /* Define a cor do texto */
+    padding: 60px 20px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Alinhar texto centro */
+    position: relative;
+}
+
+nav {
+    display: flex;
+    /* Usar Flexbox pra organizar os links */
+    justify-content: center;
+    /* Centralizar os links na barra  */
+    background-color: red;
+    /* Fundo do menu */
+    padding: 10px;
+    /* Espaçamento interno da navegação */
+}
+
+nav a {
+    color: white;
+    /* Define a cor dos links */
+    text-decoration: none;
+    /* Remove o sublinhado do texto padrão dos links */
+    margin: 5px 15px;
+    /* Espaçamento horizontal entre os links e vertical */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
