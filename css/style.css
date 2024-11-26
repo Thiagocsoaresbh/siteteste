@@ -76,3 +76,53 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
+.conteudo-principal {
+    flex: 3;
+    /* 75% da largura */
+    max-width: 75%;
+    /* Limita conteúdo a 75% */
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    /* 25% da largura */
+    max-width: 25%;
+    /* Limitar a largura do Sidebar */
+    background-color: bisque;
+    /* Fundo claro, diferente branco */
+    padding: 20px;
+    border-left: 2px solid rgb(226, 112, 112);
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        /* Empilha os elementos */
+    }
+
+    .conteudo-principal,
+    .sidebar {
+        max-width: 100%;
+        /* Remover limitação da largura máxima */
+    }
+}
+
+/* 
+    | IMAGENS DO CONTEÚDO 
+*/
+
+.imagem-principal,
+.imagem-sobre,
+.imagem-cardapio {
+    width: 100%;
+    /* Imagem ocupar toda a largura disponível */
+    height: auto;
+    /* Tamanho máximo e evitar imagens muito grandes */
+    margin: 20px 0;
+    /* Espaçamento vertical */
+    border-radius: 25px;
+    /* Bordas arredondadas */
+}
