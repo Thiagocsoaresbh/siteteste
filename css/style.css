@@ -77,6 +77,17 @@ nav a:hover {
     text-decoration: underline;
 }
 
+main {
+    display: flex;
+    /* Ativa o Flexbox */
+    flex-wrap: nowrap;
+    /* Impedir quebra de linha em resoluções/monitores maiores */
+    gap: 20px;
+    /* Espaço entre cada elemento */
+    padding: 20px;
+    /* Espaçamento interno geral */
+}
+
 .conteudo-principal {
     flex: 3;
     /* 75% da largura */
@@ -90,10 +101,10 @@ nav a:hover {
     /* 25% da largura */
     max-width: 25%;
     /* Limitar a largura do Sidebar */
-    background-color: bisque;
+    background-color: #f9f9f9;
     /* Fundo claro, diferente branco */
     padding: 20px;
-    border-left: 2px solid rgb(226, 112, 112);
+    border-left: 2px solid rgb(84, 84, 84);
 }
 
 /* Ajuste para telas menores */
