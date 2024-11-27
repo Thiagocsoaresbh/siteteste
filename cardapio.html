@@ -1,43 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pizzaria Delícia - Cardápio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <!--Início do nosso cabeçalho-->
     <header>
-        <img src="img/logo.webp" alt="Logo">
-        <h1>Pizzaria Delicia</h1>
-        <p>Descubra nossas pizzas</p>
+        <img src="img/logo.webp" alt="Logotipo do site" class="logo">
+        <h1>Pizzaria Delícia</h1>
+        <p>A melhor pizzaria da cidade!</p>
     </header>
+    <!--Menu de navegação-->
     <nav>
         <a href="index.html">Inicio</a>
         <a href="sobre.html">Sobre</a>
         <a href="cardapio.html">Cardápio</a>
         <a href="contato.html">Contato</a>
-     </nav>
+    </nav>
     <!--Conteúdo Principal-->
     <main>
-        <!--Início da section 1-->
-        <section>
-            <!-- Item 1 do cardapio-->
-            <div>
-                <h3>Esta é a seção da minha página.</h3>
-                <p>Conteudo da seção</p>
-                <img src="img/pizza_classica.webp" alt="Pizza Classica">
+        <section class="conteudo-principal cardapio-lista">
+            <!-- Pizzas Clássicas-->
+            <div class=cardapio-categoria>
+                <h3>Pizzas Clássicas</h3>
+                <p>Margherita</p>
+                <img src=" img/pizza_classica.webp" alt="Pizza Margherita">
+                <h4>Margherita.</h4>
+                <p>Mussarela, molho de tomate e manjericão.</p>
+                <p class="preco">R$ 60,00</p>
             </div>
-            <!-- Item 2 do cardapio-->
-            <div>
-                <h3>Esta é a seção da minha página.</h3>
-                <p>Conteudo da seção</p>
-                <img src="img/pizza_especial.webp" alt="Pizza Especial">
+            <div class="cardapio-item">
+                <img src="img/pizza_classica.webp" alt="Pizza Calabresa">
+                <h4>Pizza Calabresa.</h4>
+                <p>Calabrasa, cebola e mussarela.</p>
+                <p class="preco">R$ 60,00</p>
+            </div>
+            <!-- Pizzas Especiais -->
+            <div class=cardapio-categoria>
+                <h3>Pizzas Especiais</h3>
+                <img src=" img/pizza_especial.webp" alt="Pizza Frango com Catupiry">
+                <h4>Frango com Catupiry</h4>
+                <p>Frango desfiado com catupiry "ORIGINAL!!!" e ervas.</p>
+                <p class="preco">R$ 80,00</p>
+            </div>
+            <div class="cardapio-item">
+                <img src="img/pizza_especial.webp" alt="Pizza Quatro Queijos">
+                <h4>Quatro Queijos</h4>
+                <p>Mussarela, provolone, parmesão, prato.</p>
+                <p class="preco">R$ 60,00</p>
             </div>
         </section>
         <aside>
-            <h3>Promoção</h3>
-            <p>Pizza em dobro</p>
+            <h3>Promoção - Pizza em dobro</h3>
+            <p>Compre 3 pizzas grandes(clássicas), pague 2.</p>
         </aside>
     </main>
 </body>
+
 </html>

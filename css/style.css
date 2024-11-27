@@ -46,7 +46,7 @@ header {
     /* Centraliza a imagem no cabeçalho */
     color: #f6f6f6;
     /* Define a cor do texto */
-    padding: 60px 20px;
+    padding: 40px 20px;
     /* Espaçamento interno */
     text-align: center;
     /* Alinhar texto centro */
@@ -58,7 +58,7 @@ nav {
     /* Usar Flexbox pra organizar os links */
     justify-content: center;
     /* Centralizar os links na barra  */
-    background-color: red;
+    background-color: #333;
     /* Fundo do menu */
     padding: 10px;
     /* Espaçamento interno da navegação */
@@ -136,4 +136,19 @@ main {
     /* Espaçamento vertical */
     border-radius: 25px;
     /* Bordas arredondadas */
+}
+
+footer {
+    background-color: #333;
+    /* Fundo escuro */
+    color: #f6f6f6;
+    /* Texto */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.index-intro {
+    font-size: 1.2em;
+    /* Texto maior */
+    margin-bottom: 20px;
 }
