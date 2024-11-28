@@ -1,0 +1,154 @@
+/*
+Estilos da página
+*/
+
+* {
+    margin: 0px;
+    /* Remove margens padrão de todos os elementos */
+    padding: 0px;
+    /* Remove nosso padding padrão */
+    box-sizing: border-box;
+    /* Incluir borda e o padding no cálculo de largura e altura */
+    font-family: 'Arial', sans-serif;
+    /* Define a fonte padrão */
+}
+
+body {
+    background-color: #f6f6f6;
+    /* Define um fundo mais claro para a página */
+    color: #333;
+    /* Define a cor do texto principal */
+    line-height: 1.6;
+    /* Define o espaçamento entre as linhas */
+}
+
+/* 
+Cabeçalho e logo do site
+*/
+
+.logo {
+    width: 120px;
+    /* Reduzindo o tamanho do logotipo para melhorar a responsividade */
+    height: auto;
+    /* Asseguramos a proporção do logotipo */
+    display: block;
+    /* Exibe o logotipo como bloco */
+    margin: 10px auto;
+    /* Centralizar horizontalmente com espaçamento */
+}
+
+header {
+    background-image: url('../img/header.webp');
+    /* Imagem de fundo */
+    background-size: cover;
+    /* Imagem de backgroung cobrindo a área de cabeçalho */
+    background-position: center;
+    /* Centraliza a imagem no cabeçalho */
+    color: #f6f6f6;
+    /* Define a cor do texto */
+    padding: 40px 20px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Alinhar texto centro */
+    position: relative;
+}
+
+nav {
+    display: flex;
+    /* Usar Flexbox pra organizar os links */
+    justify-content: center;
+    /* Centralizar os links na barra  */
+    background-color: #333;
+    /* Fundo do menu */
+    padding: 10px;
+    /* Espaçamento interno da navegação */
+}
+
+nav a {
+    color: white;
+    /* Define a cor dos links */
+    text-decoration: none;
+    /* Remove o sublinhado do texto padrão dos links */
+    margin: 5px 15px;
+    /* Espaçamento horizontal entre os links e vertical */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    /* Ativa o Flexbox */
+    flex-wrap: nowrap;
+    /* Impedir quebra de linha em resoluções/monitores maiores */
+    gap: 20px;
+    /* Espaço entre cada elemento */
+    padding: 20px;
+    /* Espaçamento interno geral */
+}
+
+.conteudo-principal {
+    flex: 3;
+    /* 75% da largura */
+    max-width: 75%;
+    /* Limita conteúdo a 75% */
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    /* 25% da largura */
+    max-width: 25%;
+    /* Limitar a largura do Sidebar */
+    background-color: #f9f9f9;
+    /* Fundo claro, diferente branco */
+    padding: 20px;
+    border-left: 2px solid rgb(84, 84, 84);
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        /* Empilha os elementos */
+    }
+
+    .conteudo-principal,
+    .sidebar {
+        max-width: 100%;
+        /* Remover limitação da largura máxima */
+    }
+}
+
+/* 
+    | IMAGENS DO CONTEÚDO 
+*/
+
+.imagem-principal,
+.imagem-sobre,
+.imagem-cardapio {
+    width: 100%;
+    /* Imagem ocupar toda a largura disponível */
+    height: auto;
+    /* Tamanho máximo e evitar imagens muito grandes */
+    margin: 20px 0;
+    /* Espaçamento vertical */
+    border-radius: 25px;
+    /* Bordas arredondadas */
+}
+
+footer {
+    background-color: #333;
+    /* Fundo escuro */
+    color: #f6f6f6;
+    /* Texto */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.index-intro {
+    font-size: 1.2em;
+    /* Texto maior */
+    margin-bottom: 20px;
+}
